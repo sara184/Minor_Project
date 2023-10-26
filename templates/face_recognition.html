@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition</title>
+</head>
+<body>
+    <h1>Face Recognition</h1>
+    <form method="POST" action="/face_recognition" enctype="multipart/form-data">
+        <label for="username">Username</label>
+        <input type="text" name="username" required>
+        <br>
+    
+        <label for="image">Upload Your Image for Face Recognition</label>
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+    
+        <input type="submit" value="Recognize Face">
+    </form>
+    <p>{{ message }}</p>
+    
+</body>
+</html>

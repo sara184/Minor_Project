@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Processing</title>
+</head>
+<body>
+    <h1>Payment Processing</h1>
+    <form method="POST" action="/payment">
+        <label for="amount">Amount</label>
+        <input type="text" name="amount" required>
+        <br>
+
+        <label for="card_number">Card Number</label>
+        <input type="text" name="card_number" required>
+        <br>
+
+        <label for="expiry_date">Expiry Date</label>
+        <input type="text" name="expiry_date" required>
+        <br>
+
+        <label for="cvv">CVV</label>
+        <input type="text" name="cvv" required>
+        <br>
+
+        <label for="otp">Enter OTP</label>
+        <input type="text" name="otp" required>
+        <br>
+
+        <input type="submit" value="Pay">
+    </form>
+    <p>{{ message }}</p>
+</body>
+</html>
+

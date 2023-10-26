@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Generation</title>
+</head>
+<body>
+    <h1>OTP Generation</h1>
+    <form method="POST" action="/generate_otp">
+        <input type="submit" value="Generate OTP">
+    </form>
+    <p>{{ message }}</p>  {# Use Jinja2 to display OTP generation status #}
+</body>
+</html>
